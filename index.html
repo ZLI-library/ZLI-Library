@@ -1,0 +1,1865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZLI Library - Home</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .library-name {
+            font-size: 24px;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        /* Category Navigation */
+        .category-bar {
+            background-color: #444;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .category-bar a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+            font-size: 16px;
+            font-weight: 500;
+            background-color: #555;
+        }
+
+        .category-bar a:hover {
+            background-color: #007bff;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .main-content h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .main-content p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        /* Search Bar */
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .search-bar input {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+            border-radius: 5px;
+            border: 2px solid #ddd;
+        }
+
+        .search-bar button {
+            padding: 10px 15px;
+            font-size: 16px;
+            margin-left: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #0056b3;
+        }
+
+     /* Books Section */
+.books {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  /* 5 books per row */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.book {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+}
+
+.book img {
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+}
+
+.book h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.book p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+        .availability {
+            margin-top: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .available {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .unavailable {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        /* Quote Section */
+        .quote-container {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 50px;
+            font-style: italic;
+            color: #777;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .category-bar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .book {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo-container">
+            <img src="logo.png" alt="Library Logo" class="logo">
+            <div class="library-name">ZLI-ER Library</div>
+        </div>
+    </nav>
+
+    <!-- Category Navigation Bar -->
+    <div class="category-bar">
+        <a href="index.html">Home</a>
+        <a href="novels.html">Novels</a>
+        <a href="languages.html">Languages</a>
+        <a href="health.html">Health</a>
+        <a href="technical_section.html">Technical Section</a>
+        <a href="general.html">General</a>
+        <a href="english_language.html">English Language</a>
+        <a href="sales.html">Sales</a>
+        <a href="management.html">Management</a>
+        <a href="communication.html">Communication</a>
+        <a href="self_development.html">Self-Development</a>
+        <a href="saudi_arabia.html">Saudi Arabia</a>
+        <a href="around_the_world.html">Around the World</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Welcome to ZLI-ER Library!</h1>
+        <p>Your gateway to a world of knowledge, inspiration, and growth. Whether you're looking for the latest bestsellers, timeless classics, or specialized materials, ZLI Library offers an extensive collection to meet your needs.</p>
+        <p>We are dedicated to providing our community with access to books across a wide range of topics, from literature and health to business and technology. Explore our collection, expand your horizons, and find your next great read.</p>
+        
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search for books..." id="searchBox">
+            <button onclick="searchBooks()">Search</button>
+        </div>
+    </div>
+
+    <!-- Books Section - Search Results Will Be Displayed Here -->
+    <div id="searchResults"></div>
+
+    <!-- Quote Section -->
+    <div class="quote-container">
+        <p>" A reader lives a thousand lives before he dies. The man who never reads lives only one." — George R.R. Martin</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>©️ 2025 Zahid Learning Institute Library | All Rights Reserved</p>
+        <p>Contact Us: <a href="mailto:fssalamah@zahid.com">fssalamah@zahid.com</a> | <a href="tel:+966567511103">+966 567 511 103</a></p>
+    </footer>
+
+    <script>
+        // Book data (Example)
+        const booksData = [
+            {
+                title: "Crooked Night",
+                image: "novels/Crooked_Night.jpg",
+                description: "A gripping tale of mystery and betrayal.",
+                availability: "available"
+            },
+            {
+                title: "Endless Night",
+                image: "novels/Endless_Night.jpg",
+                description: "A story of obsession and revenge.",
+                availability: "available"
+            },
+            {
+                title: "1984",
+                image: "novels/1984.jpg",
+                description: "A dystopian novel by George Orwell.",
+                availability: "available"
+            },
+
+
+            {
+                title: "فرانتزكافكا",
+                           image: "novels/Franz_Kafka.jpg",
+                description: "An exploration of existential anxiety and surrealism.",
+                availability: "available"
+            },
+
+
+
+
+            {
+                title: "واختفى كل شيء",
+                           image: "novels/واختفى.jpg",
+                description: "An unforgettable journey through forgotten memories.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "بكاء الأصابع",
+                           image: "novels/The_Cry_of_Fingers.jpg",
+                description: "A psychological thriller that delves into the depths of the human psyche",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "التابوت المغلق",
+                           image: "novels/The_Sealed_Coffin.jpg",
+                description: "A historical novel set against the backdrop of war and love",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "دليلك لتعلم اللغة الصينية بالصور ",
+                           image: "languages/3.jpg",
+                description: "Learn Chinese through visual aids and easy-to-follow lessons.",
+                availability: "available"
+            },
+
+
+
+
+            {
+                title: "برنامج المحادثة المحترفة",
+                           image: "languages/4.jpg",
+                description: "A structured program to improve conversation skills in various languages.",
+                availability: "available"
+            },
+
+
+            {
+                title: "دليل الطالب في اللغة الانجليزية",
+                           image: "languages/5.jpg",
+                description: "A student-friendly guide to mastering English.",
+                availability: "available"
+            },
+
+
+            {
+                title: "تعلم المحادثة باللغة الصينية",
+                           image: "languages/6.jpg",
+                description: "A step-by-step guide to conversational Chinese.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Conversational American English ",
+                image: "languages/7.jpg",
+                description: "Common American English phrases and expressions for real-life situations.",
+                availability: "available"
+            },
+
+
+            {
+                title: "المحادثة السهلة - الطبعة الثالثة ",
+                           image: "languages/8.jpg",
+                description: "A simple and effective approach to language conversation.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Oxford Picture Dictionary - Second edition",
+                image: "languages/9.jpg",
+                description: "A visual dictionary for learning English vocabulary.",
+                availability: "available"
+            },
+
+
+            {
+                title: "معجم المصطلحات العلمية والفنية والهندسية  ( إنجليزي - عربي ) ",
+                           image: "languages/10.jpg",
+                description: "A specialized dictionary of scientific, technical, and engineering terms.",
+                availability: "available"
+            },
+
+
+            {
+                title: "قاموس اكسفورد الحديث (انجليزي - انجليزي - عربي)",
+                           image: "languages/11.jpg",
+                description: "A modern Oxford dictionary with English-to-English and English-to-Arabic translations.",
+                availability: "available"
+            },
+
+
+            {
+                title: "fight the fear",
+                image: "health/fight_the_fear.jpg",
+                description: "Tips for maintaining a balanced lifestyle.",
+                availability: "available"
+            },
+
+
+            {
+                title: "why we sleep",
+                image: "health/why_we_sleep.jpg",
+                description: "A guide to understanding essential nutrients.",
+                availability: "available"
+            },
+
+
+
+
+            {
+                title: "5 minutes to stress relief",
+                image: "health/5_minutes_to stress_relief.jpg",
+                description: "Promoting mental health in everyday life.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "the big 5",
+                image: "health/the_big_5.jpg",
+                description: "Simple exercises that can improve your health.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "الغذاء يغني عن الدواء",
+                           image: "health/الغذاء_يغني_عن_الدواء.jpg",
+                description: "Food choices that contribute to long-term well-being.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "تمارين رياضية لطاقة إيجابية",
+                           image: "health/تمارين_لطاقة_إيجابية.jpg",
+                description: "Understanding the importance of sleep for overall health.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "الكتاب الصغير للصحة ",
+                           image: "health/small.jpg",
+                description: "دليل علي يحتوي على نصائح بسيطة للحفاظ على صحتك و تعزيز نمط حياة صحي.",
+                           availability: "available"
+            },
+
+
+
+            {
+                title: "5 Minutes Stress-busting",
+                image: "health/5_minutes_stress_busting.jpg",
+                description: "Quick and effective techniques to reduce stress and improve relaxation in just five minutes.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "Operation and Maintenance Manual",
+                image: "TechnicalSection/3600.jpg",
+                description: "3600 Diesel Marine Monitoring System.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "Operation and Maintenance Manual",
+                image: "TechnicalSection/14m.jpg",
+                description: "14M Motor Grader.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "Operation and Maintenance Manual",
+                image: "TechnicalSection/c18.jpg",
+                description: "C18 Generator Set.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "Operation and Maintenance Manual",
+                image: "TechnicalSection/14h.jpg",
+                description: "14H Motor Grader ASE1-UP (Machine).",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "Operation and Maintenance Manual",
+                image: "TechnicalSection/14h.jpg",
+                description: "14H Motor Grader 7WJ1-UP (Machine).",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "Operation and Maintenance Manual",
+                image: "TechnicalSection/16m.jpg",
+                description: "16M Motor Grader B9H1-UP (Machine) R9H1-UP (machine).",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "Operation and Maintenance Manual",
+                image: "TechnicalSection/160m.jpg",
+                description: "160M Motor Grader B9E1-UP (Machine).",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "Systems Operation Troubleshooting Testing and Adjusting",
+                image: "TechnicalSection/emcp3.jpg",
+                description: "EMCP3 CNB1-UP (GENERATOR SET).",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "CATERPILLAR DEALER CONTAMINATION CONTROL COMPLIANCE GUIDE",
+                image: "TechnicalSection/control.jpg",
+                description: "It Makes a Difference You Can See.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "Custom Track Service Handbook",
+                image: "TechnicalSection/Custom_Track.jpg",
+                description: "15th edition.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "Tools & Supplies",
+                image: "TechnicalSection/tools.jpg",
+                description: "The equipment you own is your investment in the future.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "Custom Track Service Book",
+                image: "TechnicalSection/custom.jpg",
+                description: "1989 Edition.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "Parts Sales Kit Power Train And Maintenance Product",
+                image: "TechnicalSection/yellow.jpg",
+                description: "3rd Edition.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "Parts Sales Kit Undercarriage",
+                image: "TechnicalSection/green.jpg",
+                description: "4th Edition.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "USAG",
+                image: "TechnicalSection/usag.jpg",
+                description: "GENERAL CATALOG.",
+                availability: "available"
+            },
+
+ {
+                title: "LAND ROVER",
+                image: "general/land_rover.jpg",
+                description: "The history of one of the world’s most iconic off-road vehicles, tracing its evolution and impact.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "DESIGNING YOUR LIFE",
+                image: "general/designing.jpg",
+                description: "A guide to applying design thinking to create a fulfilling and meaningful life.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "Brain rules",
+                image: "general/brain.jpg",
+                description: "Explores how the brain works and how we can apply neuroscience to improve our daily lives.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "NO RULES RULES",
+                image: "general/no_rules.jpg",
+                description: "A deep dive into Netflix’s innovative corporate culture and its approach to success.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "أبق مخك حياً",
+                image: "general/brain2.jpg",
+                description: "Techniques and strategies to keep your brain active, sharp, and healthy.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "2002 طريقة لإظهار حبك لأطفالك",
+                image: "general/2002.jpg",
+                description: "Practical and heartfelt ways to express love and care for your children.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "مهارات حياتية",
+                image: "general/skills.jpg",
+                description: "Essential life skills to navigate personal and professional challenges effectively.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "كيف تفصل",
+                image: "general/how.jpg",
+                description: "Insights on managing stress, work-life balance, and avoiding burnout.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "طوق الحمامة",
+                image: "general/pigeon.jpg",
+                description: "A classic Arabic book exploring the philosophy and psychology of love.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "5 Minutes Parenting Fixes",
+                image: "general/parenting.jpg",
+                description: "Quick and practical solutions to common parenting challenges.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "لأنك الله",
+                image: "general/god.jpg",
+                description: "A spiritual reflection on the divine attributes of God and their impact on life.",
+                availability: "available"
+            },
+
+
+
+
+
+            {
+                title: "التربية الذكية",
+                image: "general/raise.jpg",
+                description: "Modern strategies for raising children with emotional intelligence and wisdom.",
+                availability: "available"
+            },
+
+
+            {
+                title: "الثقافة العامة",
+                image: "general/calture.jpg",
+                description: "A broad collection of knowledge across various topics for intellectual enrichment.",
+                availability: "available"
+            },
+
+
+            {
+                title: "4000 حقيقة مذهلة",
+                image: "general/4000.jpg",
+                description: "A compilation of fascinating facts across science, history, and the world.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Change & Chance Embraced",
+                image: "general/change.jpg",
+                description: "Insights on embracing change and making the most of life’s opportunities.",
+                availability: "available"
+            },
+
+
+            {
+                title: "و محياي 2",
+                image: "general/2.jpg",
+                description: "A journey through self-discovery, purpose, and faith.",
+                availability: "available"
+            },
+
+
+            {
+                title: "How to say goodbye to your high school graduate",
+                image: "general/how_to.jpg",
+                description: "Guidance on preparing emotionally and practically for your child’s transition to adulthood.",
+                availability: "available"
+            },
+
+
+            {
+                title: "12500 سؤال و جواب لكل سؤال",
+                image: "general/12500.jpg",
+                description: "A vast collection of questions and answers on various topics.",
+                availability: "available"
+            },
+
+
+            {
+                title: "القاموس الإشاري العربي للصم",
+                image: "general/def.jpg",
+                description: "A comprehensive guide to Arabic sign language for the deaf community.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Technical English (Course Book 2)",
+                image: "EnglishLanguage/1.jpg",
+                description: "Enhance your technical English skills with this comprehensive course book.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "Cutting Edge Intermediate",
+                image: "EnglishLanguage/2.jpg",
+                description: "A modern English course designed to improve your intermediate language skills.",
+                availability: "available"
+            },
+
+
+            {
+                title: "The New Cambridge English Course 1 (Student Book)",
+                image: "EnglishLanguage/3.jpg",
+                description: "Start your English learning journey with this foundational student book.",
+                availability: "available"
+            },
+
+
+            {
+                title: "The New Cambridge English Course 2 (Student Book)",
+                image: "EnglishLanguage/4.jpg",
+                description: "Continue building your English skills with this intermediate student book.",
+                availability: "available"
+            },
+
+
+            {
+                title: "The New Cambridge English Course 2 (Practice Book)",
+                image: "EnglishLanguage/5.jpg",
+                description: "Practice and reinforce your English skills with this workbook.",
+                availability: "available"
+            },
+
+
+            {
+                title: "The New Cambridge English Course 3 (Practice Book)",
+                image: "EnglishLanguage/6.jpg",
+                description: "Advance your English proficiency with this practice book.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Matters Pre-Intermediate",
+                image: "EnglishLanguage/7.jpg",
+                description: "Develop your pre-intermediate English skills with this engaging course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Matters Pre-Intermediate",
+                image: "EnglishLanguage/8.jpg",
+                description: "Develop your pre-intermediate English skills with this engaging course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Matters Intermediate student book",
+                image: "EnglishLanguage/9.jpg",
+                description: "Take your English to the next level with this intermediate course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Matters Intermediate workbook",
+                image: "EnglishLanguage/10.jpg",
+                description: "Take your English to the next level with this intermediate course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Matters Upper-Intermediate student book",
+                image: "EnglishLanguage/11.jpg",
+                description: "Master upper-intermediate English with this comprehensive course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Matters Upper-Intermediate workbook",
+                image: "EnglishLanguage/12.jpg",
+                description: "Master upper-intermediate English with this comprehensive course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "New Headway English Course Intermediate",
+                image: "EnglishLanguage/13.jpg",
+                description: "Improve your intermediate English with this popular course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "New Headway plus Intermediate",
+                image: "EnglishLanguage/14.jpg",
+                description: "Improve your intermediate English with this popular course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "New Headway plus Intermediate workbook",
+                image: "EnglishLanguage/15.jpg",
+                description: "Improve your intermediate English with this popular course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "New Headway English Course Upper-Intermediate",
+                image: "EnglishLanguage/17.jpg",
+                description: "Advance your English skills with this upper-intermediate course.",
+                availability: "available"
+            },
+
+
+            {
+                title: " New Headway English Course upper-Intermediate",
+                image: "EnglishLanguage/18.jpg",
+                description: "Improve your intermediate English with this popular course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "True Colors 1A",
+                image: "EnglishLanguage/19.jpg",
+                description: "Explore English through engaging themes and activities.",
+                availability: "available"
+            },
+
+
+            {
+                title: "New Interchange",
+                image: "EnglishLanguage/20.jpg",
+                description: "Learn English with this widely-used communicative course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Interchange third edition - student book 1",
+                image: "EnglishLanguage/21.jpg",
+                description: "Begin your English learning journey with this student book.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Interchange third edition - workbook 1",
+                image: "EnglishLanguage/22.jpg",
+                description: "Practice and reinforce your English skills with this workbook.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Interchange third edition - student book 2",
+                image: "EnglishLanguage/23.jpg",
+                description: "Continue improving your English with this intermediate student book.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Interchange third edition - workbook 2",
+                image: "EnglishLanguage/24.jpg",
+                description: "Practice and reinforce your intermediate English skills.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Interchange third edition - student book 3A",
+                image: "EnglishLanguage/25.jpg",
+                description: "Advance your English proficiency with this student book.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Interchange third edition - workbook 3A",
+                image: "EnglishLanguage/26.jpg",
+                description: "Practice and reinforce your advanced English skills.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Interchange third edition - student book 3B",
+                image: "EnglishLanguage/27.jpg",
+                description: "Continue advancing your English with this student book.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Interchange third edition - workbook 3B",
+                image: "EnglishLanguage/29.jpg",
+                description: "Practice and reinforce your advanced English skills.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Technical English (Course Book 1)",
+                image: "EnglishLanguage/30.jpg",
+                description: "Build your technical English foundation with this course book.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Technical English (Teacher Book 1)",
+                image: "EnglishLanguage/31.jpg",
+                description: "Support your teaching of technical English with this guide.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Top Notch Fundamentals B",
+                image: "EnglishLanguage/32.jpg",
+                description: "Learn the basics of English with this fundamentals course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Top Notch 1B",
+                image: "EnglishLanguage/33.jpg",
+                description: "Continue building your English skills with this course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Top Notch 3A",
+                image: "EnglishLanguage/34.jpg",
+                description: "Advance your English proficiency with this course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Top Notch 3B",
+                image: "EnglishLanguage/36.jpg",
+                description: "Master advanced English with this comprehensive course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Express English Student Book 1 Starter",
+                image: "EnglishLanguage/37.jpg",
+                description: "Start your English learning journey with this beginner course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Express English Workbook 1 Starter",
+                image: "EnglishLanguage/38.jpg",
+                description: "Practice and reinforce your beginner English skills.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Express English Student Book 2 Pre-Intermediate",
+                image: "EnglishLanguage/39.jpg",
+                description: "Continue improving your English with this pre-intermediate course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Interactions 1 (Reading)",
+                image: "EnglishLanguage/40.jpg",
+                description: "Develop your reading skills with this interactive course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Interactions 1 (Listening and Speaking)",
+                image: "EnglishLanguage/41.jpg",
+                description: "Improve your listening and speaking skills with this course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Interactions 1 (Grammar)",
+                image: "EnglishLanguage/42.jpg",
+                description: "Master English grammar with this comprehensive guide.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Interactions 1 (Writing)",
+                image: "EnglishLanguage/43.jpg",
+                description: "Enhance your writing skills with this interactive course.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Fundamentals of English Grammar Third Edition",
+                image: "EnglishLanguage/44.jpg",
+                description: "Build a strong foundation in English grammar with this guide.",
+                availability: "available"
+            },
+
+
+            {
+                title: "the Business Plan Workshop",
+                image: "sales/plan.jpg",
+                description: "COLIN BARROW, PAUL BARROW & ROBERT BROWN.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "Superstar Sales",
+                image: "sales/superstar.jpg",
+                description: "a 31-Day plan to motivate people, build Rapports, and Close More Sales .",
+                availability: "available"
+            },
+
+
+            {
+                title: "UP YOUR SERVICES INSIGHTS",
+                image: "sales/up.jpg",
+                description: "True Stories of Winners & Losers in the Quest for Super Services.",
+                availability: "available"
+            },
+
+
+            {
+                title: "الذكاء العاطفي للنجاح في المبيعات",
+                image: "sales/smart.jpg",
+                description: "تواصل مع العملاء و حقق النتائج.",
+                availability: "available"
+            },
+
+
+            {
+                title: "How To Speak So People Really Listen",
+                image: "sales/howto.jpg",
+                description: "The Straight-talking to communicating with the influence and impact.",
+                availability: "available"
+            },
+
+
+            {
+                title: "دليل المخترع",
+                image: "sales/guide.jpg",
+                description: "من الفكرة إلى التسويق.",
+                availability: "available"
+            },
+
+
+            {
+                title: "151 QUICK IDEAS To Motivate Your Sales Force",
+                image: "sales/151s.jpg",
+                description: "Help Great Salespeople Become Great Leaders.",
+                availability: "available"
+            },
+
+
+            {
+                title: "151 QUICK IDEAS To Get New Customers",
+                image: "sales/151.jpg",
+                description: "Attract an Endless Flow of Business at Little or No Cost.",
+                availability: "available"
+            },
+
+
+            {
+                title: "عقلية المبيعات",
+                image: "sales/mind.jpg",
+                description: "48 أداة تساعدك على البيع",
+                availability: "available"
+            },
+
+
+            {
+                title: "نجاح المبيعات",
+                image: "sales/bry.jpg",
+                description: "مكتبة براين ترايسي للنجاح.",
+                availability: "available"
+            },
+
+
+            {
+                title: "إدارة المبيعات",
+                image: "sales/sa.jpg",
+                description: "مكتبة براين ترايسي للنجاح.",
+                availability: "available"
+            },
+
+
+            {
+                title: "The Psychology of Money",
+                image: "sales/12.jpg",
+                description: "How mindset and behavior shape financial success",
+                availability: "available"
+            },
+
+
+            {
+                title: "الاختيارات الخمسة - إدارة الوقت",
+                image: "management/1.jpg",
+                description: "A practical guide to prioritizing tasks, increasing productivity, and making better decisions in a fast-paced world.",
+                availability: "available"
+            },
+
+
+            {
+                title: "حياة في الإدارة ",
+                image: "management/2.jpg",
+                description: "A personal and professional journey of leadership, offering insights into management, decision-making, and effective leadership.",
+                availability: "available"
+            },
+
+
+            {
+                title: "كيف تدير أموالك ",
+                image: "management/3.jpg",
+                description: "A financial management guide to budgeting, saving, and investing for long-term financial success.",
+                availability: "available"
+            },
+
+
+            {
+                title: "كيف تدير مشروعك بنجاح ؟ ",
+                image: "management/4.jpg",
+                description: "Essential steps for planning, executing, and growing a successful business.",
+                availability: "available"
+            },
+
+
+            {
+                title: "الاستثمار بإختصار",
+                image: "management/5.jpg",
+                description: "A simplified introduction to investing, covering key principles and strategies.",
+                availability: "available"
+            },
+
+
+            {
+                title: "الخطوة الأولى",
+                image: "management/6.jpg",
+                description: "A beginner’s guide to personal and professional growth, with practical steps to success.",
+                availability: "available"
+            },
+
+
+            {
+                title: "لغة الجسد للإدارة ",
+                image: "management/7.jpg",
+                description: "How to use body language effectively in leadership, negotiations, and workplace communication.",
+                availability: "available"
+            },
+
+
+            {
+                title: "إدارة الوقت بنجاح ",
+                image: "management/8.jpg",
+                description: "Proven strategies for managing time efficiently to enhance productivity and reduce stress.",
+                availability: "available"
+            },
+
+
+            {
+                title: "أكتشف القائد الذي بداخلك ( فن القيادة في العمل )",
+                image: "management/9.jpg",
+                description: "Unlock your leadership potential and inspire others to achieve organizational success.",
+                availability: "available"
+            },
+
+
+            {
+                title: "التحفيز",
+                image: "management/10.jpg",
+                description: "Techniques to inspire and motivate yourself and your team for peak performance.",
+                availability: "available"
+            },
+
+
+            {
+                title: "التفويض والإشراف ",
+                image: "management/11.jpg",
+                description: "Mastering the art of delegation and supervision to maximize efficiency and teamwork.",
+                availability: "available"
+            },
+
+
+            {
+                title: "التسويق",
+                image: "management/12.jpg",
+                description: "A comprehensive guide to marketing strategies, branding, and customer engagement.",
+                availability: "available"
+            },
+
+
+            {
+                title: "التفاوض",
+                image: "management/13.jpg",
+                description: "Essential negotiation skills for business, leadership, and everyday life.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Self-Managed Development ",
+                image: "management/14.jpg",
+                description: "A guide to personal and career development through continuous learning and self-improvement.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Working Relationships ",
+                image: "management/15.jpg",
+                description: "Strategies for building strong, productive workplace relationships.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Delegation ",
+                image: "management/16.jpg",
+                description: "The art of effective delegation to enhance productivity and leadership success.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Managing Customer Service ",
+                image: "management/17.jpg",
+                description: "Techniques for delivering exceptional customer service and enhancing brand loyalty.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Influencing ",
+                image: "management/18.jpg",
+                description: "How to persuade and influence others in leadership, sales, and everyday interactions.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Performance Management ",
+                image: "management/19.jpg",
+                description: "Tools and strategies for evaluating and improving employee performance.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Tackling Difficult Conversations ",
+                image: "management/20.jpg",
+                description: "How to navigate tough conversations with confidence and professionalism.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Managing Difficult Participants ",
+                image: "management/21.jpg",
+                description: "Techniques to handle challenging team members and workplace conflicts.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Managing Recruitment",
+                image: "management/22.jpg",
+                description: "A guide to hiring the right talent and building a strong workforce.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Teamworking ",
+                image: "management/23.jpg",
+                description: "How to foster collaboration and teamwork for higher productivity.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Emotional Intelligence ",
+                image: "management/24.jpg",
+                description: "The role of emotional intelligence in leadership and personal success.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Managing Change ",
+                image: "management/25.jpg",
+                description: "Strategies to lead and adapt to change in a fast-moving world.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Balance Sheet ",
+                image: "management/26.jpg",
+                description: "A fundamental guide to financial statements and business accounting.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Straight From The Gut ",
+                image: "management/27.jpg",
+                description: "A leadership memoir filled with insights on decision-making and business success.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "Writers on Leadership ",
+                image: "management/28.jpg",
+                description: "A collection of perspectives on leadership from renowned authors.",
+                availability: "available"
+            },
+
+
+            {
+                title: "The Power of Six Sigma",
+                image: "management/29.jpg",
+                description: "A guide to process improvement and quality management using Six Sigma methodology.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Strategy That Works ",
+                image: "management/30.jpg",
+                description: "How to develop and implement effective business strategies.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Managing with Intent ",
+                image: "management/31.jpg",
+                description: "Leadership strategies for guiding teams with purpose and clarity.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Dollars and Sense ",
+                image: "management/32.jpg",
+                description: "Understanding the psychology behind financial decision-making.",
+                availability: "available"
+            },
+
+
+            {
+                title: "100 Ways To Motivate Yourself",
+                image: "management/33.jpg",
+                description: "Practical tips to boost self-motivation and achieve goals.",
+                availability: "available"
+            },
+
+
+            {
+                title: "100 Ways To Motivate Others",
+                image: "management/34.jpg",
+                description: "Effective techniques to inspire and empower teams.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Real Leaders Don't Boss ",
+                image: "management/35.jpg",
+                description: "Why leadership is about influence, not authority.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Successful Time Management ",
+                image: "management/36.jpg",
+                description: "Proven techniques for managing time effectively.",
+                availability: "available"
+            },
+
+
+            {
+                title: "How To Be An Even Better Manager ",
+                image: "management/37.jpg",
+                description: "Practical advice for managers to enhance their leadership skills.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Managing Successful Teams",
+                image: "management/38.jpg",
+                description: "How to build and lead high-performing teams.",
+                availability: "available"
+            },
+
+
+            {
+                title: "From Strategy To Policy ",
+                image: "management/39.jpg",
+                description: "Transforming strategic vision into actionable policies.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Nudge The Final Edition ",
+                image: "management/40.jpg",
+                description: "How small changes in decision-making can lead to big results.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Fundamentals of Project Management ",
+                image: "management/41.jpg",
+                description: "Essential skills for managing projects successfully.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Body Language Secrets  To Win More Negotiations ",
+                image: "management/42.jpg",
+                description: "Using non-verbal communication to gain an advantage in negotiations.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Hostage At The Table ",
+                image: "management/43.jpg",
+                description: "Psychological insights on leadership and conflict resolution.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Managing With The Power of NLP ",
+                image: "management/44.jpg",
+                description: "How Neuro-Linguistic Programming (NLP) enhances management skills.",
+                availability: "available"
+            },
+
+
+            {
+                title: "The Leader Phrase Book ",
+                image: "management/45.jpg",
+                description: "A collection of powerful phrases for effective leadership communication.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Leading ",
+                image: "management/46.jpg",
+                description: "Lessons from great leaders on what it takes to lead successfully.",
+                availability: "available"
+            },
+
+
+            {
+                title: "The Effective Strategist ",
+                image: "management/47.jpg",
+                description: "How to think strategically and make impactful decisions.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Master Your Time Master Your Life ",
+                image: "management/48.jpg",
+                description: "Techniques to take control of your time and achieve balance.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Start with Why ",
+                image: "management/50.jpg",
+                description: "How great leaders inspire action by focusing on purpose.",
+                availability: "available"
+            },
+
+
+            {
+                title: "The Power Law",
+                image: "management/52.jpg",
+                description: "Understanding how power and influence shape industries and economies.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Nudge ",
+                image: "management/54.jpg",
+                description: "Behavioral economics and how small changes influence decision-making.",
+                availability: "available"
+            },
+
+
+
+            {
+                title: "The Power of Habit",
+                image: "management/56.jpg",
+                description: "How habits shape our lives and how to change them.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Good to Great",
+                image: "management/58.jpg",
+                description: "Why some companies succeed while others fail.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Creativity, INC.",
+                image: "management/60.jpg",
+                description: "A behind-the-scenes look at Pixar’s creative leadership.",
+                availability: "available"
+            },
+
+
+            {
+                title: "How to Avoid a Climate Disaster",
+                image: "management/62.jpg",
+                description: "A roadmap for solving the climate crisis.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Multipliers",
+                image: "management/64.jpg",
+                description: "How great leaders bring out the best in their teams.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Rich Dad Poor Dad",
+                image: "communication/1.jpg",
+                description: "Learn the difference in mindset between the wealthy and the poor.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Virtual Meetings and Remote Work",
+                image: "communication/2.jpg",
+                description: "Master the art of remote collaboration and virtual productivity.",
+                availability: "available"
+            },
+
+
+            {
+                title: "The Virgin Way",
+                image: "communication/3.jpg",
+                description: "Lessons on leadership and innovation from Richard Branson.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Body Language",
+                image: "communication/4.jpg",
+                description: "Understand nonverbal communication for better interactions.",
+                availability: "available"
+            },
+
+
+            {
+                title: "لغة الجسد",
+                image: "communication/5.jpg",
+                description: "اكتشف أسرار التواصل غير اللفظي وفهم تعابير الجسد.",
+                availability: "available"
+            },
+
+
+            {
+                title: "The Wisdom and Teachings of Stephen R. Covey",
+                image: "communication/6.jpg",
+                description: "Timeless lessons from the author of The 7 Habits.",
+                availability: "available"
+            },
+
+
+            {
+                title: "The Networking Book",
+                image: "communication/7.jpg",
+                description: "Build valuable connections and grow your professional network.",
+                availability: "available"
+            },
+
+
+            {
+                title: "The 7 Habits of Highly Effective People",
+                image: "communication/8.jpg",
+                description: "A guide to personal and professional effectiveness.",
+                availability: "available"
+            },
+
+
+            {
+                title: "هل تسمعني",
+                image: "communication/9.jpg",
+                description: "اكتشف مهارات الاستماع الفعّال لتعزيز التواصل.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Become a Successful Speaker",
+                image: "communication/10.jpg",
+                description: "Master public speaking and captivate your audience.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Talk Like TED",
+                image: "communication/11.jpg",
+                description: "Learn the secrets of the world’s best public speakers.",
+                availability: "available"
+            },
+
+
+            {
+                title: "The Presentation Secrets of Steve Jobs",
+                image: "communication/12.jpg",
+                description: "Engage and inspire like Apple’s visionary leader.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Business Writing and Communication",
+                image: "communication/13.jpg",
+                description: "Improve your professional writing and corporate communication.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Effective Presentation",
+                image: "communication/14.jpg",
+                description: "Deliver powerful and engaging presentations.",
+                availability: "available"
+            },
+
+
+            {
+                title: "The Six Disciplines of Breakthrough Learning",
+                image: "communication/15.jpg",
+                description: "Maximize learning impact in professional development.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Power Mentoring",
+                image: "communication/16.jpg",
+                description: "Learn how mentorship can accelerate your success.",
+                availability: "available"
+            },
+
+
+            {
+                title: "سحر الشخصية",
+                image: "communication/17.jpg",
+                description: "اكتشف كيفية تطوير شخصية جذابة ومؤثرة.",
+                availability: "available"
+            },
+
+
+            {
+                title: "How to Raise an Adult",
+                image: "communication/18.jpg",
+                description: "Break free from overparenting and prepare kids for success.",
+                availability: "available"
+            },
+
+
+            {
+                title: "Made to Stick",
+                image: "communication/20.jpg",
+                description: "Discover why some ideas thrive while others fade.",
+                availability: "available"
+            },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ];
+
+        const searchBox = document.getElementById('searchBox');
+        const searchResults = document.getElementById('searchResults');
+
+       function searchBooks() {
+    const searchTerm = searchBox.value.toLowerCase();
+    searchResults.innerHTML = ''; // Clear previous results
+
+    const filteredBooks = booksData.filter(book => {
+        return book.title.toLowerCase().includes(searchTerm);  // Search for matching books (case-insensitive)
+    });
+
+    // Ensure the books container uses grid layout
+    searchResults.classList.add('books');
+    
+    if (filteredBooks.length > 0) {
+        filteredBooks.forEach(book => {
+            const bookDiv = document.createElement('div');
+            bookDiv.classList.add('book');
+
+            bookDiv.innerHTML = `
+                <img src="${book.image}" alt="${book.title}">
+                <h3>${book.title}</h3>
+                <p>${book.description}</p>
+                <div class="availability ${book.availability}">${book.availability === 'available' ? 'Available' : 'Unavailable'}</div>
+            `;
+
+            searchResults.appendChild(bookDiv);
+        });
+    } else {
+        searchResults.innerHTML = '<p>No books found.</p>';
+    }
+}
+    </script>
+
+</body>
+</html>
