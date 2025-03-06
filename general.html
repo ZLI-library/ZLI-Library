@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General - ZLI Library</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .library-name {
+            font-size: 24px;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        /* Search Bar */
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+            width: 200px;
+        }
+
+        .search-button {
+            padding: 8px 12px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Category Navigation */
+        .category-bar {
+            background-color: #444;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .category-bar a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+            font-size: 16px;
+            font-weight: 500;
+            background-color: #555;
+        }
+
+        .category-bar a:hover {
+            background-color: #007bff;
+        }
+
+        /* Books Section */
+        .books {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  /* Change here */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+        .book {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .book:hover {
+            transform: translateY(-5px);
+        }
+
+        .book img {
+            width: 100%;
+            height: 60%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .book h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .book p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .availability {
+            margin-top: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .available {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .unavailable {
+            background-color: #dc3545;
+            color: white;
+        }
+
+
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+
+
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .search-container {
+                margin-top: 10px;
+            }
+
+            .category-bar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .category-bar a {
+                width: 90%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo-container">
+            <img src="logo.png" alt="Library Logo" class="logo">
+            <div class="library-name">ZLI-ER Library</div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Search books...">
+            <button class="search-button">Search</button>
+        </div>
+    </nav>
+
+    <!-- Category Navigation Bar -->
+    <div class="category-bar">
+        <a href="index.html">Home</a>
+        <a href="novels.html">Novels</a>
+        <a href="languages.html">Languages</a>
+        <a href="health.html">Health</a>
+        <a href="technical_section.html">Technical Section</a>
+        <a href="general.html">General</a>
+        <a href="english_language.html">English Language</a>
+        <a href="sales.html">Sales</a>
+        <a href="management.html">Management</a>
+        <a href="communication.html">Communication</a>
+        <a href="self_development.html">Self-Development</a>
+        <a href="saudi_arabia.html">Saudi Arabia</a>
+        <a href="around_the_world.html">Around the World</a>
+    </div>
+
+
+    <!-- Books Section for General -->
+    <div class="books">
+        <div class="book" data-title="LAND ROVER">
+            <img src="general/land_rover.jpg" alt="LAND ROVER">
+            <h3>LAND ROVER</h3>
+            <p>The history of one of the world’s most iconic off-road vehicles, tracing its evolution and impact.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+        <div class="book" data-title="DESIGNING YOUR LIFE">
+            <img src="general/designing.jpg" alt="DESIGNING YOUR LIFEt">
+            <h3>DESIGNING YOUR LIFE</h3>
+            <p>A guide to applying design thinking to create a fulfilling and meaningful life.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+        <div class="book" data-title="Brain rules">
+            <img src="general/brain.jpg" alt="Brain rules">
+            <h3>Brain rules</h3>
+            <p>Explores how the brain works and how we can apply neuroscience to improve our daily lives.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+        <div class="book" data-title="NO RULES RULES">
+            <img src="general/no_rules.jpg" alt="NO RULES RULES">
+            <h3>NO RULES RULES</h3>
+            <p>A deep dive into Netflix’s innovative corporate culture and its approach to success.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+        <div class="book" data-title="أبق مخك حياً">
+            <img src="general/brain2.jpg" alt="أبق مخك حياً">
+            <h3>أبق مخك حياً</h3>
+            <p>Techniques and strategies to keep your brain active, sharp, and healthy.</p>
+            <div class="availability available">Available</div>
+        </div>
+      
+       
+        <div class="book" data-title="2002 طريقة لإظهار حبك لأطفالك">
+            <img src="general/2002.jpg" alt="2002 طريقة لإظهار حبك لأطفالك">
+            <h3>2002 طريقة لإظهار حبك لأطفالك</h3>
+            <p>Practical and heartfelt ways to express love and care for your children.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+        <div class="book" data-title="مهارات حياتية">
+            <img src="general/skills.jpg" alt="مهارات حياتية">
+            <h3>مهارات حياتية</h3>
+            <p>Essential life skills to navigate personal and professional challenges effectively.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+        <div class="book" data-title="كيف تفصل">
+            <img src="general/how.jpg" alt="كيف تفصل">
+            <h3>كيف تفصل</h3>
+            <p>Insights on managing stress, work-life balance, and avoiding burnout.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+        <div class="book" data-title="طوق الحمامة">
+            <img src="general/pigeon.jpg" alt="طوق الحمامة">
+            <h3>طوق الحمامة</h3>
+            <p>A classic Arabic book exploring the philosophy and psychology of love.</p>
+            <div class="availability available">Available</div>
+        </div>
+ 
+        <div class="book" data-title="5 Minutes Parenting Fixes">
+            <img src="general/parenting.jpg" alt="5 Minutes Parenting Fixes">
+            <h3>5 Minutes Parenting Fixes</h3>
+            <p>Quick and practical solutions to common parenting challenges.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+ 
+        <div class="book" data-title="لأنك الله">
+            <img src="general/god.jpg" alt="لأنك الله">
+            <h3>لأنك الله</h3>
+            <p>A spiritual reflection on the divine attributes of God and their impact on life.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+ 
+        <div class="book" data-title="التربية الذكية">
+            <img src="general/raise.jpg" alt="التربية الذكية">
+            <h3>التربية الذكية</h3>
+            <p>Modern strategies for raising children with emotional intelligence and wisdom.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+ 
+        <div class="book" data-title="الثقافة العامة">
+            <img src="general/calture.jpg" alt="الثقافة العامة">
+            <h3>الثقافة العامة</h3>
+            <p>A broad collection of knowledge across various topics for intellectual enrichment.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+ 
+            
+              <div class="book" data-title="4000 حقيقة مذهلة">
+            <img src="general/4000.jpg" alt="4000 حقيقة مذهلة">
+            <h3>4000 حقيقة مذهلة</h3>
+            <p>A compilation of fascinating facts across science, history, and the world.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+ 
+              <div class="book" data-title="Change & Chance Embraced">
+            <img src="general/change.jpg" alt="Change & Chance Embraced">
+            <h3>Change & Chance Embraced</h3>
+            <p>Insights on embracing change and making the most of life’s opportunities.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+ 
+        <div class="book" data-title="و محياي 2">
+            <img src="general/2.jpg" alt="و محياي 2">
+            <h3>و محياي 2</h3>
+            <p>A journey through self-discovery, purpose, and faith.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+ 
+        <div class="book" data-title="How to say goodbye to your high school graduate">
+            <img src="general/how_to.jpg" alt="How to say goodbye to your high school graduate">
+            <h3>How to say goodbye to your high school graduate</h3>
+            <p>Guidance on preparing emotionally and practically for your child’s transition to adulthood. </p>
+            <div class="availability available">Available</div>
+        </div>
+
+
+
+     
+
+      <div class="book" data-title="12500 سؤال و جواب لكل سؤال">
+            <img src="general/12500.jpg" alt="12500 سؤال و جواب لكل سؤال">
+            <h3>12500 سؤال و جواب لكل سؤال</h3>
+            <p>A vast collection of questions and answers on various topics.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+
+
+      <div class="book" data-title="القاموس الإشاري العربي للصم ">
+            <img src="general/def.jpg" alt="القاموس الإشاري العربي للصم ">
+            <h3>القاموس الإشاري العربي للصم </h3>
+            <p>A comprehensive guide to Arabic sign language for the deaf community.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>©️ 2025 Zahid Learning Institute Library | All Rights Reserved</p>
+        <p>Contact Us: <a href="mailto:fssalamah@zahid.com">fssalamah@zahid.com</a> | <a href="tel:+966567511103">+966 567 511 103</a></p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- Search Functionality Script -->
+    <script>
+        const searchButton = document.querySelector('.search-button');
+        const searchBox = document.querySelector('.search-box');
+        const books = document.querySelectorAll('.book');
+
+        function searchBooks() {
+            const searchTerm = searchBox.value.toLowerCase();
+
+            books.forEach(book => {
+                const title = book.getAttribute('data-title').toLowerCase();
+                if (title.includes(searchTerm)) {
+                    book.style.display = 'block';  // Show matching books
+                } else {
+                    book.style.display = 'none';   // Hide non-matching books
+                }
+            });
+        }
+
+        searchButton.addEventListener('click', searchBooks);
+
+        searchBox.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                searchBooks();
+            }
+        });
+    </script>
+
+</body>
+</html>
