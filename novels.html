@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novels - ZLI Library</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Space between logo and search bar */
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+       .library-name {
+            font-size: 28px;
+            color: #fff;
+            font-weight: 600;
+        }
+
+
+        /* Search Bar */
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+            width: 200px;
+        }
+
+        .search-button {
+            padding: 8px 12px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Category Navigation Bar */
+        .category-bar {
+            background-color: #444;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+       .category-bar a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #555;
+}
+
+/* Specific style for Home button */
+.category-bar a[href="novels.html"] {
+    background-color: #007bff; /* Blue color for Home button */
+}
+
+.category-bar a[href="novels.html"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+        /* Books Section */
+.books {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  /* 5 books per row */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.book {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+}
+
+.book img {
+    width: 100%;
+    height: 60%;
+    border-radius: 5px;
+}
+
+.book h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.book p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+        /* Availability Status */
+        .availability {
+            margin-top: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .available {
+            background-color: #28a745;
+            color: white;
+        }
+
+        .unavailable {
+            background-color: #dc3545;
+            color: white;
+        }
+
+
+@media (max-width: 1024px) {
+    .books {
+        grid-template-columns: repeat(3, 1fr); /* 3 books per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .books {
+        grid-template-columns: repeat(2, 1fr); /* 2 books per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .books {
+        grid-template-columns: repeat(1, 1fr); /* 1 book per row */
+    }
+}
+
+
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .search-container {
+                margin-top: 10px;
+            }
+
+            .category-bar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .category-bar a {
+                width: 90%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo-container">
+            <img src="logo.png" alt="Library Logo" class="logo">
+            <div class="library-name">ZLI-ER Library</div>
+        </div>
+
+
+
+
+
+
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Search books...">
+            <button class="search-button">Search</button>
+        </div>
+    </nav>
+
+    <!-- Category Navigation Bar -->
+    <div class="category-bar">
+        <a href="index.html">Home</a>
+        <a href="terms.html">Terms & Conditions</a>
+        <a href="novels.html">Novels</a>
+        <a href="languages.html">Languages</a>
+        <a href="health.html">Health</a>
+        <a href="technical_section.html">Technical Section</a>
+        <a href="general.html">General</a>
+        <a href="english_language.html">English Language</a>
+        <a href="sales.html">Sales</a>
+        <a href="management.html">Management</a>
+        <a href="communication.html">Communication</a>
+        <a href="self_development.html">Self-Development</a>
+        <a href="saudi_arabia.html">Saudi Arabia</a>
+        <a href="around_the_world.html">Around the World</a>
+    </div>
+
+    <!-- Books Section for Novels -->
+    <div class="books">
+        <div class="book" data-title="Crooked Night">
+            <img src="novels/Crooked_Night.jpg" alt="Crooked Night">
+            <h3>Crooked Night</h3>
+            <p>A gripping tale of mystery and betrayal.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+        <div class="book" data-title="Endless Night">
+            <img src="novels/Endless_Night.jpg" alt="Endless Night">
+            <h3>Endless Night</h3>
+            <p>A story of obsession and revenge.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+        <div class="book" data-title="1984">
+            <img src="novels/1984.jpg" alt="1984">
+            <h3>1984</h3>
+            <p>A dystopian novel by George Orwell.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+        <div class="book" data-title="فرانتزكافكا">
+            <img src="novels/Franz_Kafka.jpg" alt="فرانتزكافكا">
+            <h3>فرانتزكافكا</h3>
+            <p>استكشاف القلق الوجودي والسريالية.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+        <div class="book" data-title="واختفى كل شيء">
+            <img src="novels/واختفى.jpg" alt="واختفى كل شيء">
+            <h3>واختفى كل شيء</h3>
+            <p>رحلة لا تنسى عبر الذكريات المنسية.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+        
+
+        <div class="book" data-title="بكاء الأصابع">
+            <img src="novels/The_Cry_of_Fingers.jpg" alt="بكاء الأصابع">
+            <h3>بكاء الأصابع</h3>
+            <p>رواية درامية تكشف الصراعات الداخلية و الألم العميق لشخصية تواجه تحديات الحياة و بأسلوب مؤثر و لغة شاعرية.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+        <div class="book" data-title="التابوت المغلق">
+            <img src="novels/The_Sealed_Coffin.jpg" alt="التابوت المغلق">
+            <h3>التابوت المغلق</h3>
+            <p>رواية تاريخية تدور أحداثها على خلفية الحرب والحب.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+       <div class="book" data-title="ليطمئن قلبي">
+            <img src="novels/97.jpg" alt="ليطمئن قلبي">
+            <h3>ليطمئن قلبي</h3>
+            <p>تأملات في الإيمان و الحياة عبر رحلة بحث عن الطمأنينة</p>
+            <div class="availability available">Available</div>
+        </div>
+
+           <div class="book" data-title="ساق البامبو">
+            <img src="novels/96.jpg" alt="ساق البامبو">
+            <h3>ساق البامبو</h3>
+            <p>رحلة شاب يبحث عن هويته بين الكويت و الفلبين, وسط صراع الانتماء و الرفض.</p>
+            <div class="availability available">Available</div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>©️ 2025 Zahid Learning Institute Library | All Rights Reserved</p>
+        <p>Contact Us: <a href="mailto:fssalamah@zahid.com">fssalamah@zahid.com</a> | <a href="tel:+966567511103">+966 567 511 103</a></p>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- Search Functionality Script -->
+    <script>
+        const searchButton = document.querySelector('.search-button');
+        const searchBox = document.querySelector('.search-box');
+        const books = document.querySelectorAll('.book');
+
+        function searchBooks() {
+            const searchTerm = searchBox.value.toLowerCase();
+
+            books.forEach(book => {
+                const title = book.getAttribute('data-title').toLowerCase();
+                if (title.includes(searchTerm)) {
+                    book.style.display = 'block';  // Show matching books
+                } else {
+                    book.style.display = 'none';   // Hide non-matching books
+                }
+            });
+        }
+
+        searchButton.addEventListener('click', searchBooks);
+
+        searchBox.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                searchBooks();
+            }
+        });
+    </script>
+
+</body>
+</html>
